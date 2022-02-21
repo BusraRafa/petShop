@@ -1,9 +1,15 @@
 <?php 
     include("Class/adminBack.php");
     session_start();
-    $adminID= $_SESSION['id'];
+    $adminID=  $_SESSION['id'];
+    $adminEmail=  $_SESSION['adminEmail'];
     if($adminID == null){
         header('location:index.php');
+    }
+
+    if(isset($_GET['adminLogout'])){
+        $obj_adminback = new adminBack();
+        $obj_adminback->adminLogout();
     }
     
 ?>
@@ -39,7 +45,7 @@
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
-                                      <div class="row">
+                                      
                                         <?php                                      
                                              if($views){
                                                 if($views=="dashboard"){
@@ -52,12 +58,14 @@
                                                 include("views/add-product-view.php");
                                             }elseif($views=="manage-product"){
                                                 include("views/manage-product-view.php");
+                                            }elseif($views=="edit-cat"){
+                                                include("views/edit_cat_view.php");
                                             }
                                        
                                          }
 
                                        ?>  
-                                     </div>
+                                     
                                     </div>
 
                                 </div>
