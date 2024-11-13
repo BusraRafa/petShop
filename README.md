@@ -23,8 +23,3 @@ PetShop is an online platform designed to sell pet supplies, providing both cust
 3. Set up the necessary environment to run PHP and MySQL.
 4. Open the project in a local server environment.
 
-## Contribution
-Feel free to fork the repository and submit pull requests for any improvements.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
