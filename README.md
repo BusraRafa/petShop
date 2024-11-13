@@ -1,4 +1,4 @@
-# PetShop - E-commerce Platform
+# petShop - E-commerce Platform
 
 ## Overview
 PetShop is an online platform designed to sell pet supplies, providing both customers and administrators with an easy and efficient experience. Customers can browse categories and purchase products for their pets, while administrators have access to a secure admin panel to manage products, categories, and orders.
